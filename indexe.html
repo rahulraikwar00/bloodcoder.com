@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>user login</title>
+</head>
+<body>
+	<div class="align">
+		<img class="logo" src="img/logo.svg">
+		<div class="card">
+			<div class="head">
+				<div></div>
+				<a id="login" class="selected" href="#login">Login</a>
+				<a id="register" href="#register">Register</a>
+				<div></div>
+			</div>
+			<div class="tabs">
+				<form method="post" action="backend.php">
+					<div class="inputs">
+						<div class="input">
+							<input placeholder="Username" name="user" type="text"  required>
+							<img src="img/user.svg">
+						</div>
+						<div class="input">
+							<input placeholder="Password" name="pass" type="password" required>
+							<img src="img/pass.svg">
+						</div>
+						<label class="checkbox">
+							<input type="checkbox">
+							<span>Remember me</span>
+						</label>
+					</div>
+					<button type="submit" name="loginBtn">Login</button>
+				</form>
+				<form method="post" action="backend.php">
+					<div class="inputs">
+						<div class="input">
+							<input placeholder="Email" type="text" name="email" required>
+							<img src="img/mail.svg">
+						</div>
+						<div class="input">
+							<input placeholder="Username" type="text" name="user" required>
+							<img src="img/user.svg">
+						</div>
+						<div class="input">
+							<input placeholder="Password" type="password" name="pass" required>
+							<img src="img/pass.svg">
+						</div>
+					</div> 
+					<button type="submit" name="regBtn">Register</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
